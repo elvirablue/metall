@@ -1,0 +1,105 @@
+
+
+.btn .caret {
+    border: none;
+    width: 35px;
+    height: 40px;
+    background: url(../img/ico/arr.svg) no-repeat left center;
+    background-size: auto; 
+    vertical-align: top;   
+}
+
+.btn-group {
+	height: 40px;
+}
+
+.btn-group:hover .btn .caret {
+	//background-image: url(../img/arr-hover.png);	
+}
+
+.btn-default {
+	background-image: none;
+}
+
+span.multiselect-native-select {
+    position: relative;
+    width: 100%;
+    .text-roboto(12px,400);
+    line-height: 40px;
+    color: @color-text;
+}
+
+.multiselect-container>li>a>label {
+    .text-roboto(12px,400);
+    line-height: 30px;
+    color: @color-text;
+
+}
+
+span.multiselect-native-select .btn-group {
+    width: inherit;
+}
+
+span.multiselect-selected-text {
+    display: inline-block;
+    width: -webkit-calc(100% - 12px);
+    width: ~'calc(100% - 40px)';
+    
+    overflow: hidden;
+    text-align: left;
+    .text-roboto(12px, 400);
+    line-height: 40px;
+}
+
+.checkbox input[type=checkbox], 
+.checkbox-inline input[type=checkbox], 
+.radio input[type=radio], 
+.radio-inline input[type=radio] {
+	display: none;
+}
+
+.btn-group.open .dropdown-toggle,
+.btn-group .dropdown-toggle {
+	box-shadow: none;
+	border: none;
+	background-color: transparent;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.multiselect-container {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    min-width: 100px;
+    width: 100%;
+   	
+   	margin-left: 0;
+    overflow: auto;
+    left: 0;
+    top: 40px;
+}
+
+.dropdown-menu {
+	border: 1px solid rgb(204, 204, 204);
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+	background-color: @color-navy;
+	background-image: none;
+}
+
+.btn-group>.btn:first-child {
+	height: 40px;
+}
+
+
+.multiselect-container>li.active>a>label.radio, 
+.multiselect-container>li.active>a>label.checkbox {
+    color: #fff;
+}

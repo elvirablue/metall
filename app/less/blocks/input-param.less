@@ -1,0 +1,120 @@
+.input-outer {
+	display: block;
+	width: 100%;
+	margin: 15px 0;
+
+	> label { 
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 12px; 
+		width: 95px;
+		padding-right: 10px;
+	}	
+
+	> label.navy + .input-param {
+		width: ~'calc(100% - 255px)';
+		@media @mobil-widths {width: 100%; max-width: 435px; margin-top: 10px;}
+	}
+
+	.ch_wrapper {
+		width: auto;
+		display: inline-block;
+		vertical-align: middle;
+		color: @color-text;
+		margin-right: 30px;
+	}
+
+}
+
+label.navy {
+	.text-proxima-bold(14px);
+	text-transform: uppercase;
+	width: 230px;
+	@media @mobil-widths {display: block; }
+}
+
+.input-param {
+	display: inline-block;
+	vertical-align: middle;
+	width: ~'calc(100% - 120px)';
+	height: 38px;
+	line-height: 38px;
+	font-size: 12px;
+	padding: 0 10px;
+	outline: none;
+	border: none;
+	background-color: rgb(249, 249, 249);
+  	box-shadow: inset 0px 1px 10px 0.3px rgba(0, 0, 0, 0.1);
+  	@media @mobil-widths {width: ~'calc(100% - 100px)'; max-width: 210px;}
+}
+
+.input-file-outer {
+	display: block;
+	padding-top: 15px;
+
+}
+
+.input-file {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 20px 20px 0;
+    width: 70px;
+    height: 70px;    
+    outline: none;
+    border: none;
+    cursor: pointer;
+   .bg-img(auto);
+   background-position: center 12px; 
+   background-image: url(../img/ico/plus.png);
+   font-size: 12px;
+   padding-top: 40px;
+
+   transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.input-file:hover {
+	background-color: @color-navy;
+	color: #fff;
+	background-image: url(../img/ico/plus-hover.png);
+}
+
+.input-file input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    font-size: 0px;
+    height: 100%;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.img-file {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 20px 20px 0;
+    width: 70px;
+    height: 70px;
+
+    img {
+    	width: 100%;
+    	height: 100%;
+    }
+}
+
+
+
+.upload-file {
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+
+.border {
+	background-color: #fff;
+	border: 1px solid #c9c9c9;
+	box-shadow: 0 0 0 4px #f2f2f2;
+}
+
+

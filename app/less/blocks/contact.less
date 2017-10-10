@@ -1,0 +1,66 @@
+.contact-map-wr  {
+	.mobil {display: none;}
+	.desktop {display: block;}
+	@media @mobil-widths {
+		.mobil {display: block;}
+		.desktop {display: none;}		
+	}
+
+}
+
+.contact-map {
+	position: absolute;
+	z-index: 10;
+	top: 0;	
+	right: 50%;
+	margin-right: -40%;
+	padding-top: 100px;
+
+	@media @mobil-widths {
+		width: 35vw;
+		position: static;
+		margin: 0 auto;
+		width: 100%;
+		
+		padding-top: 0;
+	}
+
+	&__block {
+		width: 100%;
+		max-width: none;
+		@media @mobil-widths {
+			box-shadow: none;
+		}
+		
+
+		 
+
+		p {
+			font-size: 12px;
+			color: #fff;
+			padding-bottom: 10px;
+			text-align: left;
+			@media @mobil-widths {
+				
+				padding-bottom: 5px;
+			}
+
+			a {color: inherit; font: inherit;}
+
+			b {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.big {
+				text-align: right;
+				width: 250px;
+				.text-roboto(25px, 700);
+				@media @mobil-widths {
+					font-size: 18px;
+					width: 180px;
+				}
+			}
+		}
+	}
+}

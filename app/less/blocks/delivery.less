@@ -1,0 +1,47 @@
+.delivery {
+	background-color: rgb(249, 249, 249);
+  	box-shadow: inset 0px 1px 9.7px 0.3px rgba(0, 0, 0, 0.08);
+  	
+
+	.container-fluid {
+		.bg-img(auto);
+		background-image: url(../img/bg-map.png);
+		background-position: left center;
+		padding-top: 20px;
+		padding-bottom: 60px;
+		@media @tablet-widths {
+			background-size: 600px auto; 
+			padding-bottom: 30px;
+			padding-top: 0px;
+		}
+
+		@media @mobil-widths {
+			background-position: bottom center;
+			background-size: 500px auto;
+			padding-bottom: 0;
+		}
+	}
+
+	&__block {
+		h2 {text-align: left;}
+		@media @tablet-widths {
+			p {font-size: 13px;}
+		}
+
+		@media @mobil-widths {
+			max-width: 450px;
+			margin: 0 auto; 
+		}		
+	}
+
+	&__button {
+		width: 100%;
+		max-width: 340px;
+		margin-top: 30px;
+
+		@media @mobil-widths {
+			margin-top: 255px;
+			margin-bottom: -30px;
+		}
+	}	
+}

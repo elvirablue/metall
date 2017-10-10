@@ -1,0 +1,36 @@
+.partners {
+	background-color: #f9f9f9;
+  	box-shadow: inset 0px 1px 9.7px 0.3px rgba(0, 0, 0, 0.08);
+  	padding-bottom: 50px;
+  	@media @mobil-widths {padding-bottom: 30px;}
+
+  	&__list {
+  		width: 100%;
+  		text-align: center;
+
+  		.img-wr {
+  			display: inline-block;
+  			vertical-align: middle;
+  			margin: 22px;
+  			width: auto;
+
+  			@media @mobil-widths {
+  				max-width: 20%; margin: 10px;
+  			}
+  		}
+
+  		.img-wr.big {
+  			@media @mobil-widths {
+  				max-width: 30%; 
+  			}
+  		}
+
+  		img {
+  			width: auto;
+  			
+  			@media @mobil-widths {}
+  		}
+
+
+  	}
+}

@@ -1,0 +1,113 @@
+.button, .input {
+	
+	width: auto;
+	min-width: 210px;
+	padding: 13px;
+	text-transform: uppercase;
+	text-align: center;	
+	outline: none;
+	cursor: pointer;
+	line-height: 1;
+
+	transition: background-color 0.5s ease,
+				color 0.5s ease;
+}
+
+.input {
+	background-color: transparent;	
+	border: 1px solid #fff;	
+	color: #fff;
+	outline: none;
+	cursor: default;
+	text-transform: none;
+}
+
+.button.transparent {
+	background-color: transparent;
+	border: 1px solid @color-navy;
+	color: @color-navy;
+}
+
+.button.transparent:hover,
+.button.transparent:active,
+.button.transparent:focus {
+	background-color: @color-navy;
+	color: #fff;
+}
+
+.button.white {
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: @color-navy;
+	box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.13);
+}
+
+.button.white:hover,
+.button.white:active,
+.button.white:focus {
+	background-color: @color-navy;	
+	color: #fff;
+}
+
+.button.navy {
+	background-color: @color-navy;
+	border: 1px solid #fff;
+	color: #fff;
+	box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.13);
+}
+
+.button.navy:hover,
+.button.navy:active,
+.button.navy:focus {
+	background-color: #fff;	
+	color: @color-navy;
+}
+
+.navbar-blue .button.navy {
+	background-color: #1e3765;
+}
+.navbar-blue .button.navy:hover,
+.navbar-blue .button.navy:active,
+.navbar-blue .button.navy:focus {
+	background-color: #fff;		
+	color: #1e3765;
+}
+
+.text16 {
+	.text-proxima-bold(16px);
+	letter-spacing: 1px;
+	@media @tablet-widths {}
+
+	@media @mobil-widths {font-size: 14px; padding-top: 16px; padding-bottom: 14px;}
+
+}
+
+.text22 {
+	.text-proxima-bold(22px);
+	padding-top: 22px;
+	padding-bottom: 20px;
+	letter-spacing: 1px;
+	@media @tablet-widths {font-size: 18px; padding-top: 18px; padding-bottom: 16px;}
+
+	@media @mobil-widths {font-size: 16px; padding-top: 16px; padding-bottom: 14px;}
+
+}
+
+.btn-up {
+	display: none;
+	margin: 10px auto;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #fff;
+	color: @color-navy;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 15px;
+	b {font-size: 18px;}
+	@media @mobil-widths {display: block;}
+}
+
