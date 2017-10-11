@@ -1,7 +1,7 @@
 .input-outer {
 	display: block;
 	width: 100%;
-	margin: 15px 0;
+	margin: 12px 0;
 
 	> label { 
 		display: inline-block;
@@ -21,9 +21,17 @@
 		display: inline-block;
 		vertical-align: middle;
 		color: @color-text;
+		margin: 0;
 		margin-right: 30px;
+		height: 38px;
+		line-height: 30px;
 	}
 
+}
+
+.input-outer.mt-20 {
+	margin-top: 20px;
+	@media @mobil-widths {margin-top: 0;}
 }
 
 label.navy {

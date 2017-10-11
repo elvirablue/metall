@@ -6,9 +6,9 @@
 	top: 0;	
 	left: 0;	
 	background-color: rgba(0, 0, 0, 0.65);
-	z-index: 9999;
+	z-index: 999999;
 	width: 100%;
-	height: 100%;
+	height: 150%;
 	display: none;
 	overflow: auto;
 }
@@ -25,7 +25,7 @@
     	
 	box-shadow: 0px 28px 49px 0px rgba(0, 0, 0, 0.14);	
 	position: fixed;
-	z-index: 10000;
+	z-index: 1000000;
 	left: 50%;
     top: 50%;
 	margin-top: -200px;
@@ -41,6 +41,10 @@
     	
     }
 	@media @mobil-widths {
+		position: absolute !important;
+		z-index: 1000000;		
+		top: 0;
+		margin-top: 110px;
 		width: 310px;		
 		margin-left: -155px;
 		
@@ -48,7 +52,8 @@
 }
 
 .modal__form {
-	background-color: transparent;
+	background-color: @color-navy;
+	background-image: none;
 	width: 100%;
 	max-width: none;
 	padding: 0 20px 30px;
@@ -61,7 +66,9 @@
 }
 
 .modal__title {
-	.text-proxima-bold(24px);
+	.text-proxima-reg(20px);
+	letter-spacing: 1px;
+	font-weight: bold;
 	padding: 40px 20px 0;	
 	text-align: center;
 	color: #fff;
@@ -127,5 +134,5 @@
 }
 
 .modal.js-modal {
-	z-index: 10100;
+	z-index: 1010000;
 }

@@ -26,9 +26,11 @@
 	}
 
 	&__block {
-		width: 100%;
+		width: 100%;		
 		max-width: none;
-		@media @mobil-widths {
+		background-image: url(../img/bg-contacts.jpg);
+		padding: 55px 50px;
+		@media @mobil-widths {			
 			box-shadow: none;
 		}
 		
@@ -36,12 +38,13 @@
 		 
 
 		p {
-			font-size: 12px;
+			font-size: 14px;
+			font-weight: 300;
 			color: #fff;
-			padding-bottom: 10px;
+			padding-bottom: 5px;
 			text-align: left;
 			@media @mobil-widths {
-				
+				font-size: 12px;
 				padding-bottom: 5px;
 			}
 
@@ -50,11 +53,15 @@
 			b {
 				display: inline-block;
 				vertical-align: middle;
+				font-weight: 500;
+				letter-spacing: 0.2px;
+				padding-top: 7px;
+
 			}
 
 			.big {
 				text-align: right;
-				width: 250px;
+				width: 280px;
 				.text-roboto(25px, 700);
 				@media @mobil-widths {
 					font-size: 18px;

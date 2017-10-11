@@ -58,6 +58,51 @@
 <div class="wrapper-x">
 	<div class="wrapper-y">
 
+      <header class="navbar-wrapper navbar-scroll">
+
+          <!-- горизонтальное меню для навигации по текущей странице -->
+
+        <nav class="navbar  container-fluid">
+
+        <!-- *********************** HEADER ********************************- -->
+          
+            <div class="navbar-header">
+               <a href="" class="index-logo mobil">
+                <img src="img/logo.png" alt="Фаворит Металл">             
+              </a>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main-scroll" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-brand clearfix" >              
+                <div class="index-header">                
+                  <a class="index-phone" href="tel:+74995793124">+7 (499) 579 31 24</a>
+                  <a href="#modal-1" class="index-button button transparent text16 js-modal-open" data-title-modal="Заказать обратный звонок">Заказать звонок</a>
+                </div>            
+              </div>
+            </div>
+        <!-- *********************** NAVIGATION ********************************- -->
+            <!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
+           
+            <div class="collapse navbar-collapse navbar-white" id="navbar-main-scroll"> 
+              <a href="" class="mobil index-button button navy text16 js-modal-open" data-title-modal="Заказать обратный звонок"">Заказать звонок</a>  
+              <a class="mobil index-phone" href="tel:+74995793124">+7 (499) 579 31 24</a>
+                <ul class="nav navbar-nav">       
+              <li><a href="#range">Ассортимент</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#benefit">Преимущества</a></li>
+              <li><a href="#delivery">Доставка</a></li>
+              <li><a href="#big-form">Поставщикам</a></li>        
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <p class="mobil index-language"><a id="ru" class="active">RU</a> / <a href="#" id="eng">ENG</a></p>   
+          </div>
+          
+        </nav>
+      </header>
+
+
 	
 
 <!-- ******************* FIRST SCREEN = HEADER + NAVIGATION + BANNER *************************- -->
@@ -87,29 +132,27 @@
 			        	<a href="#modal-1" class="index-button button transparent text16 js-modal-open" data-title-modal="Заказать обратный звонок">Заказать звонок</a>
 			        </div>			      
 			      </div>
-			    </div>
-			  
+			    </div>   
 
 
-			<!-- *********************** NAVIGATION ********************************- -->
-			    <!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
-			   
-			    <div class="collapse navbar-collapse navbar-blue" id="navbar-main">	
-			    	<a href="" class="mobil index-button button navy text16 js-modal-open" data-title-modal="Заказать обратный звонок"">Заказать звонок</a>  
-			    	<a class="mobil index-phone" href="tel:+74957863105">+7 495 786-31-05</a>
-			      	<ul class="nav navbar-nav">				
-						<li><a href="#range">Ассортимент</a></li>
-						<li><a href="#services">Услуги</a></li>
-						<li><a href="#benefit">Преимущества</a></li>
-						<li><a href="#delivery">Доставка</a></li>
-						<li><a href="#big-form">Поставщикам</a></li>				
-						<li><a href="#contacts">Контакты</a></li>
-					</ul>
-					<p class="mobil index-language"><a id="ru" class="active">RU</a> / <a href="#" id="eng">ENG</a></p>		
-				</div>
-			  
-			</nav>
-		</header>
+
+
+          <div class="collapse navbar-collapse navbar-blue" id="navbar-main"> 
+            <a href="" class="mobil index-button button navy text16 js-modal-open" data-title-modal="Заказать обратный звонок"">Заказать звонок</a>  
+            <a class="mobil index-phone" href="tel:+74957863105">+7 495 786-31-05</a>
+              <ul class="nav navbar-nav">       
+            <li><a href="#range">Ассортимент</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#benefit">Преимущества</a></li>
+            <li><a href="#delivery">Доставка</a></li>
+            <li><a href="#big-form">Поставщикам</a></li>        
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+          <p class="mobil index-language"><a id="ru" class="active">RU</a> / <a href="#" id="eng">ENG</a></p>   
+        </div>
+        
+      </nav>
+    </header>
 
 
 		<!-- *********************** BANNER ********************************- -->
@@ -132,8 +175,8 @@
 					</div>
 					<div class="col-xs-0 col-sm-4 col-md-5"></div>
 					<div class="col-xs-12 col-sm-8 col-md-7">
-						<button class="first-screen__button button white text22 js-modal-open" data-title-modal="Оформить быстрый заказ">Быстрый заказ</button>
-						<a href="#" class="first-screen__button button navy text22">Ассортимент</a>					
+						<button class="first-screen__button button white text22 js-modal-open" data-title-modal="Быстрый заказ">Быстрый заказ</button>
+						<a href="#range" class="first-screen__button button navy text22">Ассортимент</a>					
 					</div>
 				</div>			
 			</div>
@@ -164,8 +207,8 @@
 				</div>
 				<div class="col-xs-12 col-sm-5 col-md-5">
 					<div class="range__block-list">
-						<div id="js-open-range-info1" class="range__block-item-name item1"><p>Трубы стальные</p></div>
-						<div id="js-open-range-info2" class="range__block-item-name item2"><p>Балка Б/У</p></div>
+						<div id="js-open-range-info1" class="range__block-item-name item1"><p>Трубы стальные Б/У</p></div>
+						<div id="js-open-range-info2" class="range__block-item-name item2"><p>Балки Б/У</p></div>
 						<div id="js-open-range-info3" class="range__block-item-name item3"><p>Лист стальной</p></div>
 					</div>
 					
@@ -252,9 +295,9 @@
 
   													<div class="col-xs-6 col-sm-6 col-md-12">
   														<p class="tab-subtitle">возможные дефекты:</p>
-  														<p class="list-style-icon ico14">нефтяные отложения</p>
-  														<p class="list-style-icon ico15">плохая очистка</p>
-  														<p class="list-style-icon ico16">механические повреждения</p>
+  														<p class="list-style-icon ico15">нефтяные отложения</p>
+  														<p class="list-style-icon ico16">плохая очистка</p>
+  														<p class="list-style-icon ico14">механические повреждения</p>
   													</div>
   												</div>
   											</div>
@@ -262,7 +305,7 @@
   										</div>
   									</div>
 
-  									<div class="clearfix hidden-xs col-sm-5 col-md-4"> 
+  									<div class="clearfix mtop hidden-xs col-sm-5 col-md-4"> 
   										<div id="owl-1"	class="owl-carusel range__slider">
   											<p class="img-wr"><img src="img/range/r11.jpg" alt=""></p>
   											<p class="img-wr"><img src="img/range/r12.jpg" alt=""></p>
@@ -339,14 +382,14 @@
 
   											<div class="col-xs-6 col-sm-6 col-md-12">
   												<p class="tab-subtitle">возможные дефекты:</p> 
-  												<p class="list-style-icon ico16">механические повреждения</p>
+  												<p class="list-style-icon ico14">механические повреждения</p>
   											</div>
   										</div>
   									</div> 		
   										</div>
   									</div> 
 
-  									<div class="clearfix hidden-xs col-sm-5 col-md-4"> 
+  									<div class="clearfix mtop hidden-xs col-sm-5 col-md-4"> 
   										<div id="owl-2"	class="owl-carusel range__slider">
   											<p class="img-wr"><img src="img/range/r21.jpg" alt=""></p>
   											<p class="img-wr"><img src="img/range/r22.jpg" alt=""></p>
@@ -431,7 +474,7 @@
   										</div>
   									</div>
 
-  									<div class="clearfix hidden-xs col-sm-5 col-md-4 mt"> 
+  									<div class="clearfix mtop hidden-xs col-sm-5 col-md-4 mt"> 
   										<div id="owl-3"	class="owl-carusel range__slider">
   											<p class="img-wr"><img src="img/range/r31.jpg" alt=""></p>
   											<p class="img-wr"><img src="img/range/r32.jpg" alt=""></p>
@@ -453,7 +496,7 @@
 					
 					
 				</div>
-        <button type="button" class="button navy text22 range__button js-modal-open" data-title-modal="Заказать трубу стальную">Сделать заказ</button>
+        <button type="button" class="button navy noborder text22 range__button js-modal-open" data-title-modal="Заказать трубу стальную">Сделать заказ</button>
 			</div>
 			
 		</div>
@@ -492,8 +535,7 @@
   												<p>В наличии — изделия категорий Б, К, Ш. Изготовлены из низколегированной (09Г2С) и углеродистой стали (3сп). Не имеют дефектов. Подойдут для зданий производственного и жилого типа, объектов инфраструктуры, изготовления металлоконструкций.</p>
   												<div class="storage">
   													<p class="tab-subtitle">на нашем складе в наличии балки:</p>
-  													
-
+  													<p class="navy"><b>30Б1, 30б2, 35б1, 35б2 40б2, 45б2 и другие</b></p>
   												</div>
   											</div>
 
@@ -548,8 +590,7 @@
   										<p>Двутавровые балки категорий Ш, Б, К, из углеродистой и низколегированной стали. Идеально обработаны и соответствуют ГОСТ, не имеют следов коррозии и иных дефектов. Сократят затраты на строительство зданий и инфраструктурных объектов.</p>
   										<div class="storage">
   											<p class="tab-subtitle">на нашем складе в наличии балки:</p>
-  											
-
+  											<p class="navy"><b>30Б1, 30б2, 35б1, 35б2 40б2, 45б2 и другие</b></p>
   										</div>
   									</div>
   									<div class="col-xs-12 col-sm-12 col-md-5">
@@ -595,7 +636,7 @@
 					
 					
 				</div>
-        <button type="button" class="button navy text22 range__button js-modal-open" data-title-modal="Заказать балку двутавровую">Сделать заказ</button>
+        <button type="button" class="button navy noborder text22 range__button js-modal-open" data-title-modal="Заказать балку двутавровую">Сделать заказ</button>
 			</div>
 			
 		</div>
@@ -633,7 +674,7 @@
   												<p>Был в употреблении. Нарезанный и в рулонах. Дефекты отсутствуют, коррозии нет. Лист соответствует российским и международным ГОСТам, пригодится в судостроении, строительстве, изготовлении вагонов и контейнеров..</p>
   												<div class="storage">
   													<p class="tab-subtitle">категории:</p>
-  													
+  													<p class="navy"><b>Рифленый, просечный, штампованный, перфорированный</b></p>
 
   												</div>
   											</div>
@@ -681,7 +722,7 @@
 					
 					
 				</div>
-        <button type="button" class="button navy text22 range__button js-modal-open" data-title-modal="Заказать лист стальной">Сделать заказ</button>
+        <button type="button" class="button navy noborder text22 range__button js-modal-open" data-title-modal="Заказать лист стальной">Сделать заказ</button>
 			</div>
 			
 		</div>	
@@ -962,8 +1003,8 @@
           <form action="" class="form main-form__form">
             <p class="form__title">Форма заявки</p>
             <input type="text" name="user-name" class="input" placeholder="Имя" required>
-            <input type="text" name="user-phone" class="input" placeholder="+7 (___) ___-____" required>
-            <button type="submit" class="button white text16">получить консультацию</button>
+            <input type="text" name="user-phone" class="input" placeholder="+7 (___) ___ __ __" required>
+            <button type="submit" class="button white text20">получить консультацию</button>
             <div class="ch_wrapper">
               <input id="ok" type="checkbox" checked="true" name="checkbox" value="ok">
               <label for="ok">Я даю свое согласие на обработку персональных данных и соглашаюсь с условиями и политикой конфиденциальности</label>
@@ -979,7 +1020,7 @@
   <section id="benefit" class="benefit">
     <div class="container-fluid"> 
       <h2>наши преимущества</h2>
-      <p class="subtitle">Компания “Фаворит Металл” основана на стандартах качества <br>и технологиях холдинга ТД Инвестпромстрой, <br>который ведет свою деятельность <b>более&nbsp;15&nbsp;лет!</b></p>
+      <p class="subtitle">Компания “Фаворит Металл” основана на стандартах качества и технологиях холдинга ТД Инвестпромстрой, который ведет свою деятельность <b>более&nbsp;15&nbsp;лет!</b></p>
       <div class="benefit__list">
         <div class="row">
           <div class="col-xs-6 col-sm-4 col-md-4 item">          
@@ -1016,7 +1057,7 @@
               <h2>Доставка</h2>
               <p>Компания “Фаворит Металл” сотрудничает с клиентами из всех регионов России, стран СНГ и Европы. Среди наших партнеров — промышленные и строительные компании Индии, Турции, Белоруссии, Казахстана, Болгарии.</p> <br>
               <p>Каждый заказ осуществляется в срок. Мы сотрудничаем с транспортными компаниями и оперативно подготавливаем металлопрокат к отправке.</p>
-              <button type="button" class="button navy text22 delivery__button js-modal-open" data-title-modal="Заказать доставку">сделать заказ</button>
+              <button type="button" class="button navy noborder text22 delivery__button js-modal-open" data-title-modal="Заказать доставку">сделать заказ</button>
             </div>
           </div>
     </div>    
@@ -1027,7 +1068,7 @@
   <section id="big-form" class="big-form">    
     <div class="container-fluid">   
       <h2>поставщикам</h2>
-      <p class="subtitle">Будем рады сотрудничеству со строительными и производственными<br> компаниями, которые готовы предложить качественные трубы <br>с демонтажа. Предлагаем выгодные цены и индивидуальные условия.</p>
+      <p class="subtitle">Будем рады сотрудничеству со строительными и производственными компаниями, которые готовы предложить качественные трубы с демонтажа. Предлагаем выгодные цены и индивидуальные условия.</p>
       <form action="" method="post" class="big-form__form">
       <div class="row">
         <div class="col-xs-12 col-sm-7 col-md-7">
@@ -1070,7 +1111,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
-              <div class="input-outer">
+              <div class="input-outer mt-20">
                 <label for="param5" class="navy">Среда использования</label>
                 
                 <div class="input-param" id="param5"> 
@@ -1136,9 +1177,9 @@
           <div class="form big-form__form2">
             <p class="form__title">Ваши контакты</p>
             <input type="text" name="user-name" class="input" placeholder="Имя" required>
-            <input type="text" name="user-phone" class="input" placeholder="+7 (___) ___-____" required>
+            <input type="text" name="user-phone" class="input" placeholder="+7 (___) ___ __ __" required>
             <input type="email" name="user-mail" class="input" required placeholder="Email">
-            <button type="submit" class="button white text16">продать трубу</button>
+            <button type="submit" class="button white text22">продать трубу</button>
             <div class="ch_wrapper">
               <input id="ok" type="checkbox" checked="true" name="checkbox" value="ok">
               <label for="ok">Я даю свое согласие на обработку персональных данных и соглашаюсь с условиями и политикой конфиденциальности</label>
@@ -1173,12 +1214,12 @@
     <div class="desktop"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6189a99cf0b37905aa48e0231c46f5f4b9bef97db647da5f0f490c5b8c97ab96&amp;width=100%25&amp;height=670&amp;lang=ru_RU&amp;scroll=true"></script></div>
     <div class="contact-map">    
           <div class="form contact-map__block">
-            <p class="form__title">свяжитесь с нами</p>
+            <p class="form__title center">свяжитесь с нами</p>
             <p><b>Главный офис:</b></p>
             <p>Москва, Колодезный переулок,<br>дом 3, строение 17</p>
             <p><b style="width: 80px">Телефон:</b> <b class="big"><a href="tel:+74995793124">+7 (499) 579 31 24</a></b></p>
             <p><b style="width: 80px">E-mail:</b><b class="big">Info@info.ru</b></p>
-            <p><b>Производство:</b></p>
+            <p>&nbsp;</p><p><b>Производство:</b></p>
             <p>Рязань, улица Промышленная, 21</p>
             <p><b>Производственный склад:</b></p>
             <p>Челябинск, улица Физкультурная, 34</p>
@@ -1227,14 +1268,19 @@
       <p class="modal__title">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</p> 
 
       <div class="">        
-        <p class="form__subtitle">Получите бесплатную консультацию  специалиста прямо сейчас</p>
+        <p class="form__subtitle"></p>
             <input type="text" name="user-name" class="input" placeholder="Имя" required>
-            <input type="text" name="user-phone" class="input" placeholder="+7 (___) ___-____" required>
+            <input type="text" name="user-phone" class="input" placeholder="+7 (___) ___ __ __" required>
             <input type="email" name="user-mail" class="input" required placeholder="Email">
-            <button type="submit" class="button white text16">отправить</button>
+            <textarea name="user-text" class="input" id="" cols="30" rows="5" placeholder="Пожелания, объем, сроки и т.д."></textarea>
+            <button type="submit" class="button white text22">отправить</button>
             <div class="ch_wrapper">
               <input id="ok10" type="checkbox" checked="true" name="checkbox" value="ok">
               <label for="ok10">Я даю свое согласие на обработку персональных данных и соглашаюсь с условиями и политикой конфиденциальности</label>
+            </div>
+            <div class="ch_wrapper">
+              <input id="ok11" type="checkbox" checked="true" name="checkbox" value="ok">
+              <label for="ok11">Я согласен получать email-письма о скидках на товары и услуги компании</label>              
             </div>
       </div>
     </form>
