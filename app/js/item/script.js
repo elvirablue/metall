@@ -85,6 +85,7 @@ $(document).on('ready', function(){
 	var owl1 = $('.range__slider');
 
     owl1.owlCarousel({
+        items:1,
         loop:true,//Зацикливаем слайдер
         margin:20,
         dots:true,       

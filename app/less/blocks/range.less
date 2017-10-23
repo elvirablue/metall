@@ -57,12 +57,20 @@
 			list-style: none;
 			margin-left: 7px;
 			font: inherit;
-			li {font: inherit;padding-bottom: 15px;}
+			li {
+				font: inherit;
+				padding-bottom: 15px;
+				padding-left: 20px;
+				position: relative;
+			}
 
 			li:before {
 				content: "";
 				display: inline-block;
 				vertical-align: middle;
+				position: absolute;
+				left: 0;
+				top: 4px;
 				margin-right: 20px;
 				width: 12px;
 				height: 12px;
@@ -293,10 +301,11 @@
 
 	&__slider {
 		width: 100%;
+		height: 270px;
 
 		.img-wr {
-			width: 100%;
-			height: 270px;	
+			width: 370px;
+			height: 270px;				
 			@media @tablet-widths {height: auto;}		
 		}
 				

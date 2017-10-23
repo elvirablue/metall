@@ -9,6 +9,8 @@
 	.footer-link {
 		color: #fff;
 		font-size: 12px;
+		line-height: 1.1;
+		text-align: center;
 		display: inline-block;
 		width: 100%;	
 		opacity: 0.7;
@@ -23,6 +25,23 @@
 			white-space: normal;
 			padding-bottom: 7px;
 		}		
+	}
+	.footer-link.dev {
+		text-allign:left; 
+		max-width: 140px;
+		white-space:normal;
+		opacity: 1;
+		text-decoration: none;
+		span {
+			text-decoration: underline;
+		}
+		@media @tablet-widths {
+			max-width: none;
+			padding-top: 10px;
+		}
+		@media @mobil-widths {
+			text-align: left;
+		}
 	}
 
 	.index-link {
@@ -41,6 +60,12 @@
 		text-align: center;		
 		border-right: 1px solid rgba(255, 255, 255, 0.7);
 			
+	}
+
+	@media @tablet-widths {
+		text-align: center;
+		height: @height-footer-tablet;
+		margin-top: -@height-footer-tablet;
 	}
 
 	@media @mobil-widths {

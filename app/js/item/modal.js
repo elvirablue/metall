@@ -33,6 +33,27 @@ $(document).on('ready', function(){
          
     });
 
+    $('.js-modal-call-open').click(function(event){
+      event.preventDefault();
+
+      popup = document.querySelector('.js-modal-call');
+      close = popup.querySelector('.modal_close');          
+      popup.querySelector('.modal__title').innerText = this.getAttribute('data-title-modal');    
+      PopupShow(event);
+      var heightModal = $('.js-modal-call').height();
+      popup.style.marginTop = '-' + heightModal/2 + 'px';
+      var width = screen.width;
+      var heght = screen.height;
+      if (width < 770) {
+        var coords = this.getBoundingClientRect();
+        var top = window.pageYOffset + coords.top;
+        popup.style.marginTop = top + 'px';
+        if (top < 110) popup.style.marginTop = '110px';
+        popup.style.position = 'absolute !important';
+      }
+     
+});
+
     function PopupShow(event) {
           event.preventDefault();
           popup.classList.remove('zoomOut');
